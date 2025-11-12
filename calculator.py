@@ -4,8 +4,39 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
 # First example
 def add(a, b): 
-    pass
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+def mul(a, b):
+    return a * b
+
+
+def div(a, b):
+    # raise ZeroDivisionError if a == 0
+    try:
+        result = b/a
+        return result
+    except ZeroDivisionError:
+        print("Division by zero error")
+        return None
+
+def log(a, b):
+    # use math library + raise ValueError
+    try:
+        result = math.log(b,a)
+        return result
+    except ValueError:
+        print("Log error")
+        return None
+
+def exp(a, b):
+    return a**b
+
+
 
 
