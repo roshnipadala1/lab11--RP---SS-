@@ -1,4 +1,6 @@
 #https://roshnipadala1@github.com/roshnipadala1/lab11--RP---SS-
+# Partner 1: Roshni Padala
+# Partner 2: Sara
 import unittest
 from calculator import *
 
@@ -10,9 +12,9 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(0, 0), 0)
 
     def test_subtract(self):  # 3 assertions
-        self.assertEqual(sub(5, 3), 2)
-        self.assertEqual(sub(0, 5), -5)
-        self.assertEqual(sub(-2, -2), 0)
+        self.assertEqual(subtract(5, 3), 2)
+        self.assertEqual(subtract(0, 5), -5)
+        self.assertEqual(subtract(-2, -2), 0)
     # ##########################
 
     ######## Partner 1
@@ -30,9 +32,9 @@ class TestCalculator(unittest.TestCase):
             div(5, 0)
 
     def test_logarithm(self):  # 3 assertions
-        self.assertAlmostEqual(log(8, 2), 3)
-        self.assertAlmostEqual(log(100, 10), 2)
-        self.assertAlmostEqual(log(1, 5), 0)
+        self.assertAlmostEqual(logarithm(8, 2), 3)
+        self.assertAlmostEqual(logarithm(100, 10), 2)
+        self.assertAlmostEqual(logarithm(1, 5), 0)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
