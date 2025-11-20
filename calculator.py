@@ -4,6 +4,7 @@ calculator.py
 
 One function per operation, in order.
 """
+import math
 def square_root(a):
     # raise ValueError if a < 0
     try:
@@ -13,7 +14,7 @@ def square_root(a):
 def hypotenuse(a, b):
     # can have negative nums
     return math.hypot(a, b)
-import math
+
 # First example
 def add(a, b): 
     return a + b
