@@ -1,4 +1,6 @@
-#https://roshnipadala1@github.com/roshnipadala1/lab11--RP---SS-
+# https://roshnipadala1@github.com/roshnipadala1/lab11--RP---SS-
+# Partner 1: Roshni Padala
+# Partner 2: Sara
 """
 calculator.py
 - Defines functions used to create a simple calculator
@@ -20,7 +22,7 @@ def hypotenuse(a, b):
 def add(a, b): 
     return a + b
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b):
@@ -35,7 +37,7 @@ def div(a, b):
         print("Division by zero error")
         return None
 
-def log(a, b):
+def logarithm(a, b):
     # use math library + raise ValueError
     try:
         result = math.log(b,a)
